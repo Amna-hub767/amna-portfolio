@@ -14,12 +14,13 @@ function About() {
 
           {/* Left Side */}
 
-<div className="flex justify-center bg-red-500 p-5">
+<div className="flex justify-center">
   <img
     src="/images/amna.png"
     alt="Amna Basharat"
-    width="300"
-    height="300"
+    className="w-[300px] h-[300px] object-cover rounded-3xl border-4 border-cyan-500 shadow-2xl"
+    onError={() => console.log("Image failed to load")}
+    onLoad={() => console.log("Image loaded")}
   />
 </div>
 
