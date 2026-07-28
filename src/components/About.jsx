@@ -14,23 +14,13 @@ function About() {
 
           {/* Left Side */}
 
-          <div className="flex justify-center">
-
-            <img
-              src="/images/amna.png"
-              alt="Amna Basharat"
-              className="
-              rounded-3xl
-              shadow-2xl
-              border-4
-              border-cyan-500
-              w-80
-              h-80
-              object-cover
-              "
-            />
-
-          </div>
+<div className="flex justify-center">
+  <img
+    src="/images/amna.png"
+    alt="Amna Basharat"
+    className="rounded-3xl shadow-2xl border-4 border-cyan-500 w-80 h-80 object-cover"
+  />
+</div>
 
 
 
