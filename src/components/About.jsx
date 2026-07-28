@@ -1,3 +1,4 @@
+import profileImage from "../assets/amna.png";
 function About() {
   return (
     <section className="bg-slate-900 text-white py-24" id="about">
@@ -16,12 +17,10 @@ function About() {
 
 <div className="flex justify-center">
   <img
-    src="/images/Amna.jpg"
+    src={profileImage}
     alt="Amna Basharat"
-    className="w-[300px] h-[300px] object-cover rounded-3xl border-4 border-cyan-500 shadow-2xl"
-    onError={() => console.log("Image failed to load")}
-    onLoad={() => console.log("Image loaded")}
-  />
+    className="w-80 h-80 object-cover rounded-3xl border-4 border-cyan-500 shadow-2xl"
+/>
 </div>
 
 

@@ -1,30 +1,12 @@
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaPhone,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 function Contact() {
-
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        form.current,
-        "YOUR_PUBLIC_KEY"
-      )
-      .then(() => {
-        alert("Message sent successfully!");
-        form.current.reset();
-      })
-      .catch(() => {
-        alert("Failed to send message.");
-      });
-  };
-
   return (
     <section
       id="contact"
@@ -37,7 +19,7 @@ function Contact() {
         </h2>
 
         <p className="text-center text-gray-400 mt-4">
-          Feel free to reach out for internships, collaborations or project opportunities.
+          Feel free to contact me for internships, freelance projects or collaboration opportunities.
         </p>
 
         <div className="grid md:grid-cols-2 gap-12 mt-16">
@@ -77,7 +59,7 @@ function Contact() {
                     href="https://www.linkedin.com/in/your-linkedin-username/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-3xl text-cyan-400 hover:text-cyan-300 duration-300"
+                    className="text-cyan-400 text-3xl hover:text-cyan-300 duration-300"
                   >
                     <FaLinkedin />
                   </a>
@@ -86,7 +68,7 @@ function Contact() {
                     href="https://github.com/Amna-hub767"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-3xl text-cyan-400 hover:text-cyan-300 duration-300"
+                    className="text-cyan-400 text-3xl hover:text-cyan-300 duration-300"
                   >
                     <FaGithub />
                   </a>
@@ -101,44 +83,28 @@ function Contact() {
 
           {/* Right Side */}
 
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            className="bg-slate-900 p-8 rounded-3xl border border-slate-700"
-          >
+          <div className="bg-slate-900 p-8 rounded-3xl border border-slate-700 flex flex-col justify-center">
 
-            <input
-              type="text"
-              name="user_name"
-              placeholder="Your Name"
-              required
-              className="w-full bg-slate-800 p-4 rounded-xl mb-5 outline-none focus:border-cyan-400 border border-slate-700"
-            />
+            <h3 className="text-3xl font-bold mb-6">
+              Let's Chat on WhatsApp
+            </h3>
 
-            <input
-              type="email"
-              name="user_email"
-              placeholder="Your Email"
-              required
-              className="w-full bg-slate-800 p-4 rounded-xl mb-5 outline-none focus:border-cyan-400 border border-slate-700"
-            />
+            <p className="text-gray-400 leading-8 mb-8">
+              Have an internship opportunity, project idea or collaboration in mind?
+              Click the button below to start a conversation with me directly on WhatsApp.
+            </p>
 
-            <textarea
-              name="message"
-              rows="6"
-              placeholder="Your Message"
-              required
-              className="w-full bg-slate-800 p-4 rounded-xl mb-6 outline-none focus:border-cyan-400 border border-slate-700 resize-none"
-            ></textarea>
-
-            <button
-              type="submit"
-              className="w-full bg-cyan-500 hover:bg-cyan-600 duration-300 py-4 rounded-xl font-semibold"
+            <a
+              href="https://wa.me/923108744061?text=Hello%20Amna,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-600 duration-300 py-4 rounded-xl text-center font-semibold flex items-center justify-center gap-3 text-lg"
             >
-              Send Message
-            </button>
+              <FaWhatsapp className="text-2xl" />
+              Chat on WhatsApp
+            </a>
 
-          </form>
+          </div>
 
         </div>
 
