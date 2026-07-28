@@ -1,4 +1,3 @@
-import profileImage from "../assets/amna.png";
 function About() {
   return (
     <section className="bg-slate-900 text-white py-24" id="about">
@@ -17,9 +16,9 @@ function About() {
 
 <div className="flex justify-center">
   <img
-    src={profileImage}
-    alt="Amna Basharat"
-    className="w-80 h-80 object-cover rounded-3xl border-4 border-cyan-500 shadow-2xl"
+  src="/images/amna.png"
+  alt="Amna Basharat"
+  className="w-80 h-80 rounded-3xl object-cover border-4 border-cyan-500 shadow-2xl"
 />
 </div>
 
