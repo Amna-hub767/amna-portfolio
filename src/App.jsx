@@ -7,7 +7,7 @@ import Stats from "./components/Stats";
 import WhyHireMe from "./components/WhyHireMe";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import Experience from "./components/Experience";
 function App() {
 
   return (
@@ -21,6 +21,8 @@ function App() {
       <About />
 
       <Skills />
+
+      <Experience />
 
       <Projects />
 

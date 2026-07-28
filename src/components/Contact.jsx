@@ -96,14 +96,21 @@ amnabasharat767@gmail.com
 <div className="flex gap-5 mt-8">
 
 
-<a 
-href="#"
+<a
+
+href="https://www.linkedin.com/in/amna-basharat-6b1b73416"
+
+target="_blank"
+
+rel="noreferrer"
+
 className="
 text-3xl
 text-cyan-400
 hover:text-cyan-300
 duration-300
 "
+
 >
 
 <FaLinkedin/>

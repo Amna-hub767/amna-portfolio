@@ -72,8 +72,8 @@ text-gray-200
 strings={[
 "Software Engineering Student",
 "Frontend Developer",
-"Flutter Developer",
-"Full Stack Developer"
+"App Development Intern",
+"Flutter Developer"
 ]}
 
 typeSpeed={60}
@@ -99,9 +99,9 @@ max-w-2xl
 ">
 
 I build modern, responsive and user-friendly applications
-using programming and emerging technologies. 
-Passionate about solving real-world problems through software
-development and continuous learning.
+using programming and emerging technologies.
+Passionate about software development, problem solving
+and continuous learning.
 
 </p>
 
@@ -139,7 +139,7 @@ Hire Me
 
 <a
 
-href="/Amna_Basharat_Resume (11).pdf"
+href="/resume.pdf"
 
 download
 
@@ -173,7 +173,6 @@ Download Resume
 
 
 </div>
-
 
 
 </div>
