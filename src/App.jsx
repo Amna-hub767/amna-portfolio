@@ -1,3 +1,5 @@
+import GraphicDesign from "./components/GraphicDesign";
+import Certificates from "./components/Certificates";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -23,8 +25,12 @@ function App() {
       <Skills />
 
       <Experience />
+     
+      <Certificates />
 
       <Projects />
+
+      <GraphicDesign />
 
       <Stats />
 

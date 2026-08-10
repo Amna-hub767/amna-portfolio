@@ -1,164 +1,205 @@
-import { useState } from "react";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-
 function Projects() {
-  const [selectedProject, setSelectedProject] = useState(null);
-
   const projects = [
     {
       title: "AI Electricity Billing System",
+      image: "/images/projects/electricity.png",
       description:
-        "Built a Python application for electricity bill estimation and automated calculations.",
-      tech: ["Python"],
-      github: "https://github.com/Amna-hub767/AI_Electricity_Project--2-",
-      details:
-        "A desktop application that calculates electricity bills based on electricity consumption. It automates bill estimation, making the calculation process fast, accurate and user-friendly."
-    },
-
-    {
-      title: "Hospital Emergency Triage",
-      description:
-        "Developed an 8086 Assembly Language project for emergency patient triage based on priority.",
-      tech: ["8086 Assembly Language"],
-      github: "https://github.com/Amna-hub767/Hospital-Emergency-Triage-1",
-      details:
-        "This Assembly Language project manages emergency patient priority using queue-based logic and basic Assembly programming concepts."
+        "A Python-based project for electricity bill prediction and calculation.",
+      tools: ["Python"],
+      github:
+        "https://github.com/Amna-hub767/AI_Electricity_Project--2-",
     },
 
     {
       title: "Zakat Calculator",
+      image: "/images/projects/zakat.png",
       description:
-        "Developed an Assembly Language application to calculate Zakat based on user-entered assets.",
-      tech: ["8086 Assembly Language"],
-      github: "https://github.com/Amna-hub767/zakat-calculator",
-      details:
-        "A simple Assembly Language project that calculates Zakat according to the provided assets and displays the payable amount."
+        "A Zakat calculator developed using Assembly Language.",
+      tools: ["Assembly Language"],
+      github:
+        "https://github.com/Amna-hub767/zakat-calculator",
     },
 
     {
-      title: "Smart Railway Gate Control System",
+      title: "Hospital Emergency Triage",
+      image: "/images/projects/hospital-triage.png",
       description:
-        "Created a Java-based simulation for automatic railway gate control and train detection.",
-      tech: ["Java"],
-      github: "https://github.com/Amna-hub767/Railway-gate-control-system.git",
-      details:
-        "This Java project simulates an automated railway gate system that detects train movement and controls gate operations."
+        "An Assembly Language project for managing emergency patients according to priority.",
+      tools: ["Assembly Language"],
+      github:
+        "https://github.com/Amna-hub767/Hospital-Emergency-Triage-1",
+    },
+
+    {
+      title: "Railway Gate Control System",
+      image: "/images/projects/railway.png",
+      description:
+        "A railway gate control system developed using Java.",
+      tools: ["Java"],
+      github:
+        "https://github.com/Amna-hub767/Railway-gate-control-system.git",
+    },
+
+    {
+      title: "Flashcard Quiz App",
+      image: "/images/projects/flashcard.png",
+      description:
+        "A Flutter-based flashcard quiz application developed for interactive learning.",
+      tools: ["Flutter", "Dart"],
+      github:
+        "https://github.com/Amna-hub767/CodeAlpha_FlashQuizApp",
+    },
+
+    {
+      title: "Fitness Tracker App",
+      image: "/images/projects/fitness.png",
+      description:
+        "A Flutter fitness tracking application for tracking workouts, steps and calories.",
+      tools: ["Flutter", "Dart", "SQLite"],
+      github:
+        "https://github.com/Amna-hub767/CodeAlpha_FitnessTrackerApp",
+    },
+
+    {
+      title: "Intra University Event Hub",
+      image: "/images/projects/university-events.png",
+      description:
+        "A university event management and discovery interface designed in Figma.",
+      tools: ["Figma", "UI/UX Design"],
+      figma:
+        "https://www.figma.com/proto/S1XK8iEf2HtlhTkAW7lwiO/intra-univesity-event-hub?node-id=126-222&t=aHmWSysYsz7us6ks-1&scaling=scale-down&content-scaling=fixed&page-id=9%3A356",
+    },
+
+    {
+      title: "Medical Management System",
+      image: "/images/projects/medical-management.png",
+      description:
+        "A medical management system UI/UX design created in Figma.",
+      tools: ["Figma", "UI/UX Design"],
+      figma:
+        "https://www.figma.com/design/Lq7XJWu9ZsjTB2Al8Znspr/Untitled?node-id=0-1&t=bYrWiObQpmXF0YNE-1",
     },
 
     {
       title: "Vehicle Detector & Counter",
+      image: "/images/projects/vehicle.png",
       description:
-        "Built a Python-based vehicle detection and counting system using computer vision techniques.",
-      tech: ["Python", "OpenCV"],
-      github: "https://github.com/Amna-hub767/Vehicle-detector---Counter.git",
-      details:
-        "A computer vision application that detects and counts vehicles from video footage using Python and OpenCV."
+        "A Python computer vision project for detecting and counting vehicles.",
+      tools: ["Python", "Computer Vision"],
+      github:
+        "https://github.com/Amna-hub767/Vehicle-detector---Counter.git",
     },
 
     {
       title: "Food Delivery Website",
+      image: "/images/projects/food-delivery.png",
       description:
-        "Designed and developed a responsive food delivery website with an attractive user interface.",
-      tech: ["HTML", "CSS"],
-      github: "",
-      details:
-        "A responsive frontend website featuring navigation, food categories, offers and a modern user interface."
+        "A responsive food delivery website designed with a modern interface.",
+      tools: ["HTML", "CSS", "JavaScript"],
     },
 
     {
       title: "Library Management System",
+      image: "/images/projects/library.png",
       description:
-        "Developed a Java desktop application for managing books, students, issue records and return operations.",
-      tech: ["Java"],
-      github: "",
-      details:
-        "A desktop-based library management system that helps manage books, students and borrowing records efficiently."
-    }
+        "A software project designed for managing library books and records.",
+      tools: ["Java"],
+    },
   ];
 
   return (
-    <section id="projects" className="bg-slate-950 text-white py-24">
+    <section
+      className="bg-slate-900 text-white py-24"
+      id="projects"
+    >
       <div className="max-w-7xl mx-auto px-8">
 
         <h2 className="text-5xl font-bold text-center">
-          My <span className="text-cyan-400">Projects</span>
+          My{" "}
+          <span className="text-cyan-400">
+            Projects
+          </span>
         </h2>
 
-        <p className="text-center text-gray-400 mt-4">
-          Projects showcasing my programming, software development and problem-solving skills.
+        <p className="text-gray-400 text-center mt-4">
+          A collection of my development, academic and UI/UX projects.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8 mt-14">
+        <div className="grid md:grid-cols-2 gap-10 mt-16">
+
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-slate-900 rounded-3xl border border-slate-700 p-8 hover:border-cyan-400 hover:-translate-y-2 duration-300 shadow-xl"
+              className="bg-slate-950 border border-slate-700 rounded-3xl overflow-hidden hover:border-cyan-400 duration-300 shadow-xl"
             >
-              <h3 className="text-2xl font-bold">{project.title}</h3>
 
-              <p className="text-gray-400 mt-5 leading-7">
-                {project.description}
-              </p>
+              <div className="bg-slate-800 p-5">
 
-              <div className="flex flex-wrap gap-3 mt-6">
-                {project.tech.map((item, i) => (
-                  <span
-                    key={i}
-                    className="bg-cyan-500/20 text-cyan-400 px-4 py-2 rounded-full text-sm"
-                  >
-                    {item}
-                  </span>
-                ))}
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-72 object-contain rounded-2xl"
+                />
+
               </div>
 
-              <div className="flex gap-4 mt-8">
-                {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 bg-slate-800 hover:bg-slate-700 py-3 rounded-xl flex items-center justify-center gap-2 duration-300"
-                  >
-                    <FaGithub />
-                    GitHub
-                  </a>
-                )}
+              <div className="p-8">
 
-                <button
-                  onClick={() => setSelectedProject(project)}
-                  className="flex-1 bg-cyan-500 hover:bg-cyan-600 py-3 rounded-xl flex items-center justify-center gap-2 duration-300"
-                >
-                  <FaExternalLinkAlt />
-                  View Details
-                </button>
+                <h3 className="text-3xl font-bold">
+                  {project.title}
+                </h3>
+
+                <p className="text-gray-400 leading-7 mt-4">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-3 mt-6">
+
+                  {project.tools.map((tool, i) => (
+                    <span
+                      key={i}
+                      className="bg-cyan-500/20 text-cyan-400 px-4 py-2 rounded-full text-sm"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+
+                </div>
+
+                <div className="flex flex-wrap gap-3 mt-7">
+
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-slate-800 hover:bg-slate-700 text-white px-5 py-3 rounded-xl duration-300"
+                    >
+                      GitHub
+                    </a>
+                  )}
+
+                  {project.figma && (
+                    <a
+                      href={project.figma}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-purple-600 hover:bg-purple-700 text-white px-5 py-3 rounded-xl duration-300"
+                    >
+                      Figma
+                    </a>
+                  )}
+
+                </div>
+
               </div>
+
             </div>
           ))}
+
         </div>
+
       </div>
-
-      {selectedProject && (
-        <div className="fixed inset-0 bg-black/70 flex items-center justify-center px-5 z-50">
-          <div className="bg-slate-900 max-w-lg w-full rounded-3xl border border-cyan-400 p-8">
-
-            <h3 className="text-3xl font-bold text-cyan-400">
-              {selectedProject.title}
-            </h3>
-
-            <p className="text-gray-300 leading-8 mt-6">
-              {selectedProject.details}
-            </p>
-
-            <button
-              onClick={() => setSelectedProject(null)}
-              className="mt-8 bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-xl"
-            >
-              Close
-            </button>
-
-          </div>
-        </div>
-      )}
     </section>
   );
 }
