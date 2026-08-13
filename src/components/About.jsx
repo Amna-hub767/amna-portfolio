@@ -87,7 +87,7 @@ function About() {
                 </h4>
 
                 <p className="mt-2 text-gray-300">
-                  3.09 / 4.00
+                  3.16 / 4.00
                 </p>
 
               </div>
