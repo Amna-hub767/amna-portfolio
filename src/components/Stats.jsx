@@ -9,7 +9,7 @@ function Stats() {
       title: "Internships",
     },
     {
-      number: "3",
+      number: "6",
       title: "Certificates",
     },
     {
